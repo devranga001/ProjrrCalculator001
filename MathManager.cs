@@ -9,6 +9,12 @@ public class MathManager
         MathManager rrCalculator = new MathManager();
         rrCalculator.Add3Numbers();
         rrCalculator.Add5Numbers(24);
+        rrCalculator.Add7Numbers(20,40,60,80,100);
+
+    
+        int returnedSum = rrCalculator.Add7Numbers(20,40,60,80,100);
+        System.Console.Write("The Answer is...");
+        System.Console.WriteLine(returnedSum);
     }
         //Adds 3 Numbers
         public void Add3Numbers()
@@ -31,7 +37,14 @@ public class MathManager
         System.Console.WriteLine(sumof5numbers);
 
         }
+        public int Add7Numbers(int num9, int num10, int num11, int num12, int num13)
 
-        
+        {
+        int num14 = 120;
+        int num15 = 140;
+        int sumof7Numbers = num9+num10+num11+num12+num13+num14+num15;
+        return sumof7Numbers;
+
+        }
 
 }
